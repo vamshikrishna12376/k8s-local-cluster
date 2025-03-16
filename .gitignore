@@ -1,0 +1,43 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+logs/
+*.out
+*.err
+
+# Ignore Kubernetes-related temporary files
+*.kube/config
+*.kube/cache/
+*.kube/http-cache/
+
+# Ignore Kind cluster data
+kind-config.yaml
+
+# Ignore Helm chart generated files
+helm/charts/
+helm/repo/
+*.tgz
+
+# Ignore Terraform state files (if using Terraform for cloud deployment)
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Ignore Python virtual environment (if any scripts are used)
+venv/
+__pycache__/
+
+# Ignore Node.js dependencies (if using a frontend)
+node_modules/
+
+# Ignore IDE-specific files (VSCode, IntelliJ, JetBrains)
+.vscode/
+.idea/
+*.iml
+
+# Ignore Makefile temporary files
+Makefile~
