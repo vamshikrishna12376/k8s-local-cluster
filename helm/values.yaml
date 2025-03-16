@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: your-dockerhub-username/your-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: false  # Set to true if using Ingress
+  host: my-app.local
